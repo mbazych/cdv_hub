@@ -9,4 +9,4 @@ COPY --from=build /usr/ /usr/
 RUN mkdir -p /var/www/cdv-hub/
 WORKDIR /var/www/cdv-hub/
 COPY src/ .
-CMD ./run.sh
+CMD /bin/sh run.sh

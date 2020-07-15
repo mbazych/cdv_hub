@@ -9,7 +9,7 @@ React używa również reduxa do zarządzania stanami.
 # 3. Infrastruktura
 Aplikacja działa na dwóch kontenerach Dockera - nginx oraz app:
 - nginx - kontener z serwerem webowym nginx który słucha na porcie :80 i przekazuje przez proxy ruch na :8000, czyli port na którym działa aplikacja w Django
-- app - aplikacja w Django słuchająca na porcie :8000 z bazą danych sqlite3
+- app - aplikacja w Django słuchająca na porcie :8000 z bazą danych 
 Kontenery sa uruchomione na maszynie wirtualnej w Google Cloud, której IP publiczny jest ustawiony jako rekord A domeny hub.mczarczynski.pl
 
 # 4. Opis aplikacji

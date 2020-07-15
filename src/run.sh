@@ -1,3 +1,4 @@
+
 python3.8 hub/manage.py makemigrations car_reservation
 python3.8 hub/manage.py makemigrations rest_framework
 python3.8 hub/manage.py makemigrations frontend
