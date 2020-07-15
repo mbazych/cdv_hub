@@ -1,0 +1,5 @@
+src/.gitignore
+src/.git
+src/.vscode
+src/node_modules
+**/migrations

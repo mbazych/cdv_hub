@@ -1,0 +1,13 @@
+src/.gitignore
+src/.git
+src/.vscode
+src/node_modules
+**/migrations
+*.env
+*.pyc
+*.pyc
+*.json
+*.sqlite3
+src/mydatabase
+
+*/*/*/__pycache__
