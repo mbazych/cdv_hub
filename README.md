@@ -1,5 +1,5 @@
 # 1. Dostęp
-Aplikacja dostępna jest pod adresem https://hub.mczarczynski.pl
+Aplikacja dostępna jest pod adresem http://hub.mczarczynski.pl
 Również można uruchomić aplikację na własnym komputerze - wystarczy zainstalować dockera - https://docs.docker.com/get-docker/
 sklonować repozytorium oraz uruchomić komendę docker-compose up w folderze głównym aplikacji.
 # 2. Kod
