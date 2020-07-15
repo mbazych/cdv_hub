@@ -2,11 +2,11 @@ version: '3'
 
 services:
   app:
-    image: jdobreck/centuria-hub:latest
+    image: mbazych/cdv-hub:latest
     build: .
-    container_name: centuria-hub_app
+    container_name: cdv-hub_app
     volumes:
-      - ./src:/var/www/centuria-hub
+      - ./src:/var/www/cdv-hub
     ports:
       - "8000:8000"
   nginx:
