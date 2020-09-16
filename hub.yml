@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cdv-hub
+  name: cdv-hub
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cdv-hub
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: cdv-hub
+    spec:
+      containers:
+        - image: gcr.io/core-catalyst-286019/github_mbazych_cdv_hub
+          imagePullPolicy: IfNotPresent
+          name: hub-sha256-1
+---
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  labels:
+    app: cdv-hub
+  name: cdv-hub-hpa-3f4o
+  namespace: default
+spec:
+  maxReplicas: 5
+  metrics:
+    - resource:
+        name: cpu
+        targetAverageUtilization: 80
+      type: Resource
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: cdv-hub
