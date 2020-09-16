@@ -87,7 +87,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'cdv_hub',
         'HOST': '10.253.1.3',
-        'PORT': '5432'
+        'PORT': '5432',
+        'PASSWORD': 'CDVhub123!',
+        'USER': 'cdv-hub',
+        'NAME': 'cdv_hub'
     }
 }
 
