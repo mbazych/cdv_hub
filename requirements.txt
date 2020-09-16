@@ -9,3 +9,5 @@ pycparser==2.19
 pytz==2019.3
 six==1.13.0
 sqlparse==0.3.0
+swagger-spec-validator==2.7.3
+drf-yasg==1.17.1

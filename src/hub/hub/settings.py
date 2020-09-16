@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'car_reservation',
     'rest_framework',
-    'frontend',
     'knox', 
+    'drf_yasg',
     'accounts',
     'archive'
     
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'hub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'NAME': 'cdv_hub',
     }
 }
 
