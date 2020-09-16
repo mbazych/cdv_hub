@@ -9,5 +9,8 @@ src/node_modules
 *.json
 *.sqlite3
 src/mydatabase
-
+*/*/*/settings.py
+settings.py
 */*/*/__pycache__
+src/hub/hub/settings.py
+
