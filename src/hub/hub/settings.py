@@ -79,8 +79,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'hub.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+#Database
+#https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -92,6 +92,17 @@ DATABASES = {
         'USER': 'cdv-hub',
         'NAME': 'cdv_hub'
     }
+}
+
+# Swagger
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+        }
+    },
 }
 
 
@@ -122,7 +133,6 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
 
 USE_L10N = False
 
